@@ -1,0 +1,39 @@
+*****DEFAUTLT************
+#ffffff white
+
+#fafafa gray 1
+#f5f5f5 gray 2
+#f0f0f0 gray 3
+#ebebeb gray 4
+#e5e5e5 gray 5
+#e0e0e0 gray 6
+
+#F60 orange
+*************************
+
+*****FIRST ATTEMPT************
+#1D1C1A
+
+#ff8547
+#ff9447
+#ffa447
+#ffb347
+#ffc247
+#ffd247
+
+#7eb1b3
+
+*************************
+
+*****SECOND ATTEMPT************
+
+#1D1C1A
+
+#271C16
+#311D13
+#3B1D0F
+#441D0B
+#4E1D07
+#581E04
+
+#621E00
