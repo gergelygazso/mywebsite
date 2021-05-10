@@ -1,5 +1,5 @@
 html {
-    font-size: 100%;
+    font-size: 200%;
     box-sizing: border-box; //The width and height properties (and min/max properties) includes content, padding and border
    
     background-image: url(/resources/images/background.svg);
@@ -9,4 +9,18 @@ html {
     background-position: center;
     
     color:#FDFEFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    //font-size: $font-sm;
+    font-weight: 300;
+    //color: $grayishBlue;
+    line-height: 1.5;
+}
+
+.intro{
+    font-weight: 300;
 }
