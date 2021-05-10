@@ -1,23 +1,35 @@
 .intro {
     height: 100vh;
     background-color:#000000;
-    opacity: 0.8;
     font-size: 3rem;
     font-weight: 200;
     padding: 2rem;
+    //opacity: 0.8;
+    background-color:  rgba(0, 0, 0, 0.8);
 
     & .flex-container {
-        height: inherit;
+        position: relative;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
-    &__row {
-        
+    &__details {
+        background-color: red;
+        flex: 1;
+        order: 1;
+    }
+
+    &__picture {
+        flex: 1;
+        order: 2;
+        background-image: url(/resources/images/profile_bandw.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 14.5rem;
     }
 }
+
+
 
 
