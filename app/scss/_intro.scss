@@ -4,22 +4,21 @@
     font-size: 3rem;
     font-weight: 200;
     padding: 0 2rem 0 2rem;
-    //opacity: 0.8;
     background-color:  rgba(0, 0, 0, 0.8);
 
     & .flex-container {
         height: inherit;
         display: flex;
-        //align-items: center;
-        //border: 2px solid pink;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     &__details {
-        flex: 2;
         order: 1;
     }
 
-    &__picture {
+    /*&__picture {
         flex: 1;
         order: 2;
         display: flex;
@@ -33,7 +32,7 @@
             height: auto;
             border-radius: 15rem;
         }
-    }
+    }*/
 }
 
 
