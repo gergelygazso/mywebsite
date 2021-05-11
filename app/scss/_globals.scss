@@ -20,3 +20,9 @@ body {
     letter-spacing: 0.3rem;
     overflow-x: hidden;
 }
+
+section.divider {
+    height: 400px;
+    display: grid;
+    place-items: center;
+}
