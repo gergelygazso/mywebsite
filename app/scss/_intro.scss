@@ -3,30 +3,36 @@
     background-color:#000000;
     font-size: 3rem;
     font-weight: 200;
-    padding: 2rem;
+    padding: 0 2rem 0 2rem;
     //opacity: 0.8;
     background-color:  rgba(0, 0, 0, 0.8);
 
     & .flex-container {
-        position: relative;
+        height: inherit;
         display: flex;
-        align-items: center;
+        //align-items: center;
+        //border: 2px solid pink;
     }
 
     &__details {
-        background-color: red;
-        flex: 1;
+        flex: 2;
         order: 1;
     }
 
     &__picture {
         flex: 1;
         order: 2;
-        background-image: url(/resources/images/profile_bandw.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        min-height: 14.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(168, 168, 168);
+    
+        & img {
+            max-width: 15rem;
+            height: auto;
+            border-radius: 15rem;
+        }
     }
 }
 
