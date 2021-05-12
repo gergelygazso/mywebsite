@@ -26,3 +26,7 @@ section.divider {
     display: grid;
     place-items: center;
 }
+
+a, a:visited, a:hover {
+    text-decoration: none;
+  }

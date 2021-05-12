@@ -32,6 +32,34 @@
             border-radius: 100px;
         }
     }
+
+    & .intro__socials {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        order: 3;
+
+        & > a:not(:last-child) {
+            margin-right: 0.625rem;
+        }
+
+        & i {
+            color: #eeeeee;
+            transition: color 300ms ease-in-out;
+            
+            &:hover {
+                color: #6db33f;
+            }
+        }
+    }
+
+    & .button {
+        order: 4;
+        margin-top: 100px;
+        border: 2px solid olive;
+    }
 }
 
 
