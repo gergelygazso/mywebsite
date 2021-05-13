@@ -37,8 +37,8 @@ section.divider {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.875rem;
-  margin: 4px 2px;
+  font-size: 0.8rem;
+  margin: 0rem 0rem;
   cursor: pointer;
 }
 
@@ -99,7 +99,7 @@ section.divider {
 
 .intro .intro__socials {
   margin-top: 3rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +120,7 @@ section.divider {
 }
 
 .intro .intro__socials i {
+  font-size: 1rem;
   color: #eeeeee;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
@@ -143,7 +144,15 @@ section.divider {
 }
 
 .intro .intro__btn {
-  background-color: aqua;
+  background-color: transparent;
+  border: 1px solid #eeeeee;
+  -webkit-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.intro .intro__btn:hover {
+  color: #1d1c1a;
+  background-color: #eeeeee;
 }
 
 .polygon {

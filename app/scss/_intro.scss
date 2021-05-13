@@ -39,7 +39,7 @@
 
     & .intro__socials {
         margin-top: 3rem;
-        margin-bottom: 0.625rem;
+        margin-bottom: 0.5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -51,6 +51,7 @@
         }
 
         & i {
+            font-size: 1rem;
             color: #eeeeee;
             transition: color 300ms ease-in-out;
             
@@ -63,11 +64,20 @@
     & .button__wrapper {
         display: flex;
         flex-direction: row;
+
         justify-content: center;
     }
 
     & .intro__btn {
-        background-color: aqua;
+        background-color: transparent;
+        border: 1px solid #eeeeee;
+        transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+
+        &:hover{
+            color: rgba(29, 28, 26, 1);
+            background-color: #eeeeee;
+            //border: transparent;
+        }
     }
 }
 
