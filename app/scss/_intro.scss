@@ -70,13 +70,14 @@
 
     & .intro__btn {
         background-color: transparent;
-        border: 1px solid #eeeeee;
+        border: 1px solid #6db33f;
         transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 
         &:hover{
-            color: rgba(29, 28, 26, 1);
-            background-color: #eeeeee;
-            //border: transparent;
+            color: #eeeeee;
+            //background-color: #eeeeee;
+            background-color: #6db33f;
+
         }
     }
 }

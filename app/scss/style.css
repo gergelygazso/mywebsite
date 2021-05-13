@@ -32,7 +32,7 @@ section.divider {
       -ms-flex-order: 4;
           order: 4;
   border: none;
-  color: white;
+  color: #6db33f;
   padding: 0.25rem 0.5rem;
   text-align: center;
   text-decoration: none;
@@ -145,14 +145,14 @@ section.divider {
 
 .intro .intro__btn {
   background-color: transparent;
-  border: 1px solid #eeeeee;
+  border: 1px solid #6db33f;
   -webkit-transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
   transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
 }
 
 .intro .intro__btn:hover {
-  color: #1d1c1a;
-  background-color: #eeeeee;
+  color: #eeeeee;
+  background-color: #6db33f;
 }
 
 .polygon {
