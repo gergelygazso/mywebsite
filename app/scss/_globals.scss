@@ -27,6 +27,15 @@ section.divider {
     place-items: center;
 }
 
-a, a:visited, a:hover {
+.btn {
+    order: 4;
+    border: none;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    margin: 4px 2px;
+    cursor: pointer;
   }

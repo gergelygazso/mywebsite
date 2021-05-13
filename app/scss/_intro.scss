@@ -27,19 +27,24 @@
 
         & img {
             display: block;
-            height: 100px;
+            height: 6.25rem;
             width: auto;
-            border-radius: 100px;
+            border-radius: 6.25rem;
         }
+    }
+
+    & .socials-wrapper {
+        order: 3;
     }
 
     & .intro__socials {
         margin-top: 3rem;
+        margin-bottom: 0.625rem;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        order: 3;
+        //order: 3;
 
         & > a:not(:last-child) {
             margin-right: 0.625rem;
@@ -55,10 +60,14 @@
         }
     }
 
-    & .button {
-        order: 4;
-        margin-top: 100px;
-        border: 2px solid olive;
+    & .button__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    & .intro__btn {
+        background-color: aqua;
     }
 }
 

@@ -27,8 +27,19 @@ section.divider {
   place-items: center;
 }
 
-a, a:visited, a:hover {
+.btn {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  border: none;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
+  font-size: 0.875rem;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .intro {
@@ -75,13 +86,20 @@ a, a:visited, a:hover {
 
 .intro .intro__image img {
   display: block;
-  height: 100px;
+  height: 6.25rem;
   width: auto;
-  border-radius: 100px;
+  border-radius: 6.25rem;
+}
+
+.intro .socials-wrapper {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .intro .intro__socials {
   margin-top: 3rem;
+  margin-bottom: 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,15 +107,12 @@ a, a:visited, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
 }
 
 .intro .intro__socials > a:not(:last-child) {
@@ -114,12 +129,21 @@ a, a:visited, a:hover {
   color: #6db33f;
 }
 
-.intro .button {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-  margin-top: 100px;
-  border: 2px solid olive;
+.intro .button__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .intro__btn {
+  background-color: aqua;
 }
 
 .polygon {
