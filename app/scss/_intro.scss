@@ -24,6 +24,7 @@
 
     & .intro__image {
         order: 1;
+        margin-bottom: 0.41rem;
 
         & img {
             display: block;
@@ -75,7 +76,6 @@
 
         &:hover{
             color: #eeeeee;
-            //background-color: #eeeeee;
             background-color: #6db33f;
 
         }

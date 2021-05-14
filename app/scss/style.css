@@ -82,6 +82,7 @@ section.divider {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  margin-bottom: 0.41rem;
 }
 
 .intro .intro__image img {
