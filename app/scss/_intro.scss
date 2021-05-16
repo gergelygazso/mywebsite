@@ -1,6 +1,7 @@
 .intro {
     height: 100vh;
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
+    font-size: 2.625rem;
     font-weight:400;
     padding: 0 2rem 0 2rem;
     background-color:  rgba(29, 28, 26, 0.96);
@@ -28,9 +29,9 @@
 
         & img {
             display: block;
-            height: 6.25rem;
+            height: 10.9375rem;
             width: auto;
-            border-radius: 6.25rem;
+            border-radius: 10.9375rem;
         }
     }
 
@@ -48,11 +49,11 @@
         //order: 3;
 
         & > a:not(:last-child) {
-            margin-right: 0.625rem;
+            margin-right: 1.09375rem;
         }
 
         & i {
-            font-size: 1rem;
+            font-size: 1.75rem;
             color: #eeeeee;
             transition: color 300ms ease-in-out;
             
@@ -67,18 +68,6 @@
         flex-direction: row;
 
         justify-content: center;
-    }
-
-    & .intro__btn {
-        background-color: transparent;
-        border: 1px solid #6db33f;
-        transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
-
-        &:hover{
-            color: #eeeeee;
-            background-color: #6db33f;
-
-        }
     }
 }
 

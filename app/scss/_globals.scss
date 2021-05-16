@@ -31,11 +31,20 @@ section.divider {
     order: 4;
     border: none;
     color: #6db33f;
-    padding: 0.25rem 0.5rem;
+    padding: 0.44rem 0.875rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     margin: 0rem 0rem;
     cursor: pointer;
-  }
+
+    background-color: transparent;
+    border: 1px solid #6db33f;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    
+    &:hover{
+        color: #eeeeee;
+        background-color: #6db33f;
+    }
+}
