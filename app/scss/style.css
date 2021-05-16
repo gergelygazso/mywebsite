@@ -267,4 +267,14 @@ section.divider {
   z-index: -1;
   margin-bottom: -10vw;
 }
+
+.footer .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer #name, .footer #email {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
