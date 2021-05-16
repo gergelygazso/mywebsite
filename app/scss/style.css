@@ -2,12 +2,11 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(/resources/images/background.svg);
+  background-color: #1D1C1A;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  color: #eeeeee;
 }
 
 body {
@@ -18,6 +17,7 @@ body {
   line-height: 1.3;
   letter-spacing: 0.1rem;
   overflow-x: hidden;
+  color: #eeeeee;
 }
 
 section.divider {
@@ -69,7 +69,7 @@ section.divider {
   height: calc(var(--vh, 1vh) * 100);
   /*--vh is suitable for mobile users with address bars. Declared by javascript window.innerHeight, that represents the browser's height*/
   font-weight: 400;
-  background-color: rgba(29, 28, 26, 0.96);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 0 1rem 0 1rem;
   font-size: 1.5rem;
 }
@@ -223,7 +223,7 @@ section.divider {
 }
 
 .polygon {
-  background-image: url(/resources/images/background.svg);
+  background-color: #1D1C1A;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -263,7 +263,7 @@ section.divider {
 
 .footer {
   position: relative;
-  background-color: #1D1C1A;
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: -1;
   margin-bottom: -10vw;
 }

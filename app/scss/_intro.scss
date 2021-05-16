@@ -2,7 +2,8 @@
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100); /*--vh is suitable for mobile users with address bars. Declared by javascript window.innerHeight, that represents the browser's height*/
     font-weight:400;
-    background-color:  rgba(29, 28, 26, 0.96);
+    //background-color:  rgba(29, 28, 26, 0.96);
+    background-color:  rgba(0, 0, 0, 0.2);
     padding: 0 1rem 0 1rem;
     font-size: 1.5rem;
     
