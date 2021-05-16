@@ -9,11 +9,19 @@
     @include breakpoint-up(large) {
         font-size: 2.625rem;
     }
+
+    @include breakpoint-up(medium) {
+        font-size: 2.2rem;
+    }
     
     & .row2 br {
         display: static;
 
         @include breakpoint-up(large) {
+            display: none;
+        }
+
+        @include breakpoint-up(medium) {
             display: none;
         }
     }
@@ -45,10 +53,16 @@
             height: 100px;
             border-radius: 100px;
             
+            @include breakpoint-up(medium) {
+                height: 9rem;
+                border-radius: 9rem;
+            }
+
             @include breakpoint-up(large) {
                 height: 10.9375rem;
                 border-radius: 10.9375rem;
             }
+
         }
     }
 
@@ -74,6 +88,10 @@
             transition: color 300ms ease-in-out;
             font-size: 1.125rem;
             
+            @include breakpoint-up(medium) {
+                font-size: 1.5rem;
+            }
+
             @include breakpoint-up(large) {
                 font-size: 1.75rem;
             }

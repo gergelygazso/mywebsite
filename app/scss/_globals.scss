@@ -38,6 +38,10 @@ section.divider {
     font-size: 0.9rem;
     padding: 0.4375rem 0.4375rem;
     
+    @include breakpoint-up(medium) {
+        font-size: 1.15rem;
+    }
+
     @include breakpoint-up(large) {
         padding: 0.44rem 0.875rem;
         font-size: 1.4rem;
