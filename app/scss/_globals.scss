@@ -31,13 +31,17 @@ section.divider {
     order: 4;
     border: none;
     color: #6db33f;
-    padding: 0.44rem 0.875rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.4rem;
-    margin: 0rem 0rem;
-    cursor: pointer;
+    cursor: pointer;    
+    font-size: 0.9rem;
+    padding: 0.4375rem 0.4375rem;
+    
+    @include breakpoint-up(large) {
+        padding: 0.44rem 0.875rem;
+        font-size: 1.4rem;
+    }
 
     background-color: transparent;
     border: 1px solid #6db33f;
