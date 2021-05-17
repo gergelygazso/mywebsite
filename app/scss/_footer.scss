@@ -2,14 +2,15 @@
     background-color:  rgba(0, 0, 0, 0.2);
     //border-radius: 0 0 10vw 10vw;
     z-index: -1;
-    margin-bottom: -10vw;
+    //margin-bottom: -10vw;
 
     & .flex-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        /*box-sizing: border-box;
+        padding: 0 10px;*/
     }
     
     
@@ -24,17 +25,27 @@
         font-size: 1.15rem;
         font-family: inherit;
         font-weight: 300;
-        caret-color: white;
-        color: white;
+        caret-color: #eeeeee;
+        color: #eeeeee;
+        outline: none;
     }
 
     & #message {
-        height: 150px;
+        height: 300px;
+        width: 80vw;
         resize: both;
+
+        @include breakpoint-up(large) {
+            width: 50vw;
+        }
     }
 
     & #submit {
         align-self: flex-end;
         padding: 0.2rem 2rem;
     }
+}
+
+section.helper {
+    border: 1px solid green;
 }

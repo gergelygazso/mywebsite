@@ -1,14 +1,14 @@
-.polygon {
-  //background-color: #223843;
-  //background-color: rgba(255, 255, 255, 0);
-
+.divider1per2 {
+    display: grid;
+    place-items: center;
+    height: 11vw;
+    
     //background-image: url(/resources/images/background.svg);
     background-color: #1D1C1A;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-
 
     position: relative;
     clip-path: polygon(0% 0%, 0% 100%, 0% calc(100% - 5vw), 10% calc(100% - 2vw), 20% calc(100% - 4vw), 30% calc(100% - 1vw), 40% calc(100% - 7vw), 50% calc(100% - 5vw), 60% calc(100% - 2vw), 70% calc(100% - 6vw), 80% calc(100% - 4vw), 90% calc(100% - 6vw), 100% calc(100% - 5vw), 100% 0%);

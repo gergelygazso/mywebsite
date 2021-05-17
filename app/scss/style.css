@@ -21,7 +21,7 @@ body {
 }
 
 section.divider {
-  height: 400px;
+  height: 11vw;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -222,7 +222,11 @@ section.divider {
           justify-content: center;
 }
 
-.polygon {
+.divider1per2 {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 11vw;
   background-color: #1D1C1A;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -234,7 +238,7 @@ section.divider {
   margin-bottom: -7vw;
 }
 
-.polygon::after {
+.divider1per2::after {
   background-color: rgba(65, 107, 37, 0.6);
   content: '';
   position: absolute;
@@ -247,7 +251,7 @@ section.divider {
           transform: scale(-1, -1);
 }
 
-.polygon::before {
+.divider1per2::before {
   background-color: rgba(50, 73, 32, 0.4);
   content: '';
   position: absolute;
@@ -261,10 +265,18 @@ section.divider {
           transform: scale(1, -1);
 }
 
+.divider2per2 {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 6vw;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .footer {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: -1;
-  margin-bottom: -10vw;
 }
 
 .footer .flex-container {
@@ -281,7 +293,8 @@ section.divider {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 200px;
+  /*box-sizing: border-box;
+        padding: 0 10px;*/
 }
 
 .footer #name, .footer #email, .footer #message {
@@ -296,18 +309,30 @@ section.divider {
   font-size: 1.15rem;
   font-family: inherit;
   font-weight: 300;
-  caret-color: white;
-  color: white;
+  caret-color: #eeeeee;
+  color: #eeeeee;
+  outline: none;
 }
 
 .footer #message {
-  height: 150px;
+  height: 300px;
+  width: 80vw;
   resize: both;
+}
+
+@media (min-width: 64em) {
+  .footer #message {
+    width: 50vw;
+  }
 }
 
 .footer #submit {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.2rem 2rem;
+}
+
+section.helper {
+  border: 1px solid green;
 }
 /*# sourceMappingURL=style.css.map */
