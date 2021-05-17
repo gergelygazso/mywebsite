@@ -267,24 +267,47 @@ section.divider {
   margin-bottom: -10vw;
 }
 
-.footer .container {
+.footer .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 200px;
-  padding: 10px;
-  background: transparent;
 }
 
 .footer #name, .footer #email, .footer #message {
-  display: block;
-  background-color: rgba(255, 255, 255, 0.9);
+  display: inline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1d1c1a;
   border: none;
   width: 100%;
   margin-bottom: 10px;
-  padding: 5px 10px;
+  padding: 7px 10px;
+  font-size: 1.15rem;
+  font-family: inherit;
+  font-weight: 300;
+  caret-color: white;
+  color: white;
 }
 
 .footer #message {
-  width: 100%;
   height: 150px;
   resize: both;
+}
+
+.footer #submit {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0.2rem 2rem;
 }
 /*# sourceMappingURL=style.css.map */
