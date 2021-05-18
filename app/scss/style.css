@@ -215,6 +215,10 @@ body {
           justify-content: center;
 }
 
+.projects {
+  height: 50vh;
+}
+
 .divider1per2 {
   display: -ms-grid;
   display: grid;
@@ -338,5 +342,57 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.2rem 2rem;
+}
+
+.footer #status {
+  color: black;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.footer #status.success {
+  background-color: lightgreen;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+
+.footer #status.error {
+  background-color: red;
+  color: white;
+  -webkit-animation: status 4s ease forwards;
+          animation: status 4s ease forwards;
+}
+
+@-webkit-keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
