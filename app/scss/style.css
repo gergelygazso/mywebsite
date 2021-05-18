@@ -20,13 +20,6 @@ body {
   color: #eeeeee;
 }
 
-section.divider {
-  height: 11vw;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
 .btn {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
@@ -276,7 +269,6 @@ section.divider {
 
 .footer {
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: -1;
 }
 
 .footer .flex-container {
@@ -287,9 +279,9 @@ section.divider {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -297,8 +289,24 @@ section.divider {
         padding: 0 10px;*/
 }
 
+.footer .flex-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
 .footer #name, .footer #email, .footer #message {
-  display: inline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #1d1c1a;
@@ -330,9 +338,5 @@ section.divider {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.2rem 2rem;
-}
-
-section.helper {
-  border: 1px solid green;
 }
 /*# sourceMappingURL=style.css.map */
