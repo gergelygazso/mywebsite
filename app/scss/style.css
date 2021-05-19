@@ -20,6 +20,11 @@ body {
   color: #eeeeee;
 }
 
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .btn {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
@@ -54,6 +59,17 @@ body {
 .btn:hover {
   color: #eeeeee;
   background-color: #6db33f;
+}
+
+hr {
+  width: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-weight: 300;
+  margin: 0 auto 0 auto;
+  text-align: center;
 }
 
 .intro {
@@ -215,11 +231,14 @@ body {
           justify-content: center;
 }
 
+.project {
+  text-align: center;
+}
+
 .project__content {
-  margin: 0 auto;
+  margin: 0;
   padding: 3rem 0rem;
-  width: 80vw;
-  background-color: white;
+  margin: 0 10vw 0 10vw;
 }
 
 .project__grid {
@@ -241,6 +260,52 @@ body {
   .project__grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.project__item {
+  border: 2px solid #6db33f;
+  -webkit-box-shadow: 0px 1px 5px rgba(108, 177, 62, 0.8);
+          box-shadow: 0px 1px 5px rgba(108, 177, 62, 0.8);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.project__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.project__text {
+  padding: 1.875rem 1.3rem;
+}
+
+.project__icon {
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+  font-size: 5rem;
+}
+
+.project__title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #6db33f;
+}
+
+@media (min-width: 64em) {
+  .project__title {
+    font-size: 1.3rem;
+  }
+}
+
+.project__description {
+  font-size: 1.15rem;
+}
+
+@media (min-width: 64em) {
+  .project__description {
+    font-size: 1rem;
   }
 }
 
@@ -314,8 +379,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*box-sizing: border-box;
-        padding: 0 10px;*/
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .footer .flex-form {

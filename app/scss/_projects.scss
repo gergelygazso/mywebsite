@@ -1,10 +1,11 @@
 .project {
+    text-align: center;
 
     &__content {
-        margin: 0 auto;
+        margin: 0;
         padding: 3rem 0rem;
-        width: 80vw;
-        background-color: white;
+        margin: 0 10vw 0 10vw;
+
     }
 
     &__grid {
@@ -18,6 +19,45 @@
       
         @include breakpoint-up(large){
             grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &__item {
+        border: 2px solid #6db33f;
+        box-shadow: 0px 1px 5px rgba(108, 177, 62, 0.8);
+        transition: all 150ms ease-in-out;
+    
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__text {
+        padding: 1.875rem 1.3rem;
+    }
+
+    &__icon {
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+        font-size: 5rem;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #6db33f;
+
+        @include breakpoint-up(large) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.15rem;
+
+        @include breakpoint-up(large) {
+            font-size: 1rem;
         }
     }
 

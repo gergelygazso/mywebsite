@@ -22,6 +22,11 @@ body {
     color: #eeeeee;
 }
 
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
 .btn {
     order: 4;
     border: none;
@@ -50,4 +55,15 @@ body {
         color: #eeeeee;
         background-color: #6db33f;
     }
+}
+
+hr {
+    width: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-weight: 300;
+    margin: 0 auto 0 auto;
+    text-align: center;
 }
