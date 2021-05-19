@@ -43,9 +43,9 @@
         width: 80vw;
         resize: both;
 
-        @include breakpoint-up(large) {
+        /*@include breakpoint-up(large) {
             width: 50vw;
-        }
+        }*/
     }
 
     & #submit {
@@ -88,6 +88,6 @@
         opacity: 0;
         pointer-events: none;
     }
-}  
+}
 
 

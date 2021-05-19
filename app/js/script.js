@@ -21,7 +21,7 @@ async function handleSubmit(event) {
     }
   }).then(response => {
       status.classList.add('success');
-    status.innerHTML = "Thanks for your mail!";
+    status.innerHTML = "Message sent successfully!";
     form.reset()
   }).catch(error => {
     status.classList.add('error');

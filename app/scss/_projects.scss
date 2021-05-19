@@ -1,3 +1,24 @@
-.projects {
-    height: 50vh;
+.project {
+
+    &__content {
+        margin: 0 auto;
+        padding: 3rem 0rem;
+        width: 80vw;
+        background-color: white;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.875rem;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr);
+        }
+      
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
 }

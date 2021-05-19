@@ -215,8 +215,33 @@ body {
           justify-content: center;
 }
 
-.projects {
-  height: 50vh;
+.project__content {
+  margin: 0 auto;
+  padding: 3rem 0rem;
+  width: 80vw;
+  background-color: white;
+}
+
+.project__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+
+@media (min-width: 40em) {
+  .project__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .project__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .divider1per2 {
@@ -330,12 +355,9 @@ body {
   height: 300px;
   width: 80vw;
   resize: both;
-}
-
-@media (min-width: 64em) {
-  .footer #message {
-    width: 50vw;
-  }
+  /*@include breakpoint-up(large) {
+            width: 50vw;
+        }*/
 }
 
 .footer #submit {
